@@ -1,2 +1,38 @@
-#Magic-8-ball
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Magic 8 Ball</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Magic 8 Ball</h1>
+        
+        <form>
+            <label for="question">Ask a question:</label>
+            <input type="text" id="question" name="question">
+            <button type="submit">Shake</button>
+        </form>
+        
+        <div>
+            <h2>Answer:</h2>
+            <p>(The answer will appear here)</p>
+        </div>
+    </div>
+</body>
+</html>
