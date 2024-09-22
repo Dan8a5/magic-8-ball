@@ -1,0 +1,21 @@
+@import url('styles.css');
+
+.test-background-color {
+  background-color: #06500a;
+}
+
+@test 'Background color is set correctly' {
+  assert-css('.test-background-color', 'background-color', '#06500a');
+}
+
+@test 'Background color is not transparent' {
+  assert-css('.test-background-color', 'background-color', 'not(transparent)');
+}
+
+@test 'Background color is a valid hex color' {
+  assert-matches('.test-background-color', 'background-color', /^#[0-9A-Fa-f]{6}$/);
+}
+
+@test 'Background color has correct RGB values' {
+  assert-css('.test-background-color', 'background-color', 'rgb(6, 80, 10)');
+}
