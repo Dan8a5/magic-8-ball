@@ -1,29 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Magic 8 Ball</title>
+    <title>Magic 8 Ball - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Magic 8 Ball</h1>
-        
-        <img src="8ball.svg" alt="Magic 8 Ball">
-        
-        <form>
-            <label for="question">Ask a question:</label>
-            <input type="text" id="question" name="question">
-            <button type="submit">Shake</button>
-        </form>
-        
-        <div>
-            <h2>Answer:</h2>
-            <p>(The answer will appear here)</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to the Magic 8 Ball</h1>
+        <div id="magic8Ball">
+            <div id="ball">
+                <div id="answer"></div>
+            </div>
         </div>
-    </div>
+        <input type="text" id="question" placeholder="Ask a question...">
+        <button id="askButton">Ask the Magic 8 Ball</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Magic 8 Ball. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
-  
